@@ -1,0 +1,219 @@
+*{	
+	font-family: sans-serif;
+	margin: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body{
+	min-width: 1100px;
+	margin-left: 180px;
+}
+
+footer{
+	padding: auto;
+	color: white;
+	height: 180px;
+	padding: 5px 10px 10px 10px;
+	background-color: #595452;
+	bottom: 0;
+	position: relative;
+}
+#footerDiv{
+	width: 70%;
+	margin: 0;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	-ms-transform: translate(-50%, -50%);
+  	transform: translate(-50%, -50%);
+  	text-align: center;
+}
+footer h3{
+	margin-bottom: 5px;
+}
+/*--------------------------------------------*/
+/*Styling for the popup and all its components*/
+/*--------------------------------------------*/
+.bg-modal{
+	margin-left: -180px;
+	width: 100%;
+	height: 105%;
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	top:0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+
+.modal-content{
+	width: 500px;
+	height: 300px;
+	background-color: white;
+	border-radius: 10px;
+	text-align: center;
+	padding: 15px;
+	position: relative;
+}
+
+.close{
+	position: absolute;
+	top:0;
+	right: 12px;
+	font-size: 40px;
+	transform: rotate(45deg);
+	cursor: pointer;
+}
+
+#modalPic{
+	max-height: 35%;
+	width: auto;
+}
+
+.modalText{
+	margin: 10px auto 15px auto;
+}
+
+.modalForm{
+	font-size: 15px;
+	width: 50%;
+	display: block;
+	margin: 15px auto 15px auto; 
+}
+
+.subButt{
+	padding:6px 12px 6px 12px;
+	background-color: #26abff;
+	border-radius: 7px;
+	color: white;
+	text-decoration: none;
+}
+.subButt:hover{
+	color: grey;
+	background-color: #009dff;
+}
+
+#name{
+	font-size: 15px;
+}
+#email{
+	font-size: 15px;
+}
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+
+
+/*--------------------------------------------*/
+/*  Styling for the about section  */
+/*--------------------------------------------*/
+#aboutDiv{
+	height: 900px;
+	width: auto;
+	background: #e6e6e6;
+	margin: 0;
+	/*text-align: center;*/
+}
+
+#aboutWrapper{
+	min-width: 1000px;
+	position: absolute;
+	top: 50%;
+	margin-top: -18%;
+}
+
+#aboutPic{
+	width: 100%;
+	height: auto
+}
+
+#aboutPhoto{
+	margin-right: 25px;
+	width: 50%;
+	height: 150px;
+	float: right;
+}
+
+#aboutText{
+	margin-left: 40px;
+	text-align: justify;
+	float: left;
+	width: 40%;
+}
+
+#aboutText p{
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 20px;
+}
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+
+
+/*--------------------------------------------*/
+/*Styling for the project section*/
+/*--------------------------------------------*/
+#projectDiv{
+	background-color: #cccccc;
+	height: 1250px;
+}
+
+#projectText{
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 40px;
+	margin: auto; 
+	width: 60%;
+}
+#projTable{
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: lighter;
+	margin: 12px 50px 12px 25px;
+	text-align: center;
+	border-collapse: separate;
+	border-spacing: 20px 5px;
+	font-size: 17px;
+}
+.tablePhotos{
+	height: 150px;
+}
+.stocksProjPhoto{
+	height: 200px;
+}
+.importantWord{
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, .2);
+	color: #009dff;
+}
+.liveHost{
+	text-decoration: none;
+	color: #ff8000;
+}
+.liveHost:hover{
+	background-color: white;
+	color: #009dff;
+}
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+
+
+.tscript{
+	text-decoration: none;
+	color: #009dff;
+}
+.tscript:hover{
+	border-radius: 5px;
+	color: white;
+	background: #ff8000;
+}
+
+
+
+
+
+

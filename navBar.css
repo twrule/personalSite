@@ -1,0 +1,145 @@
+/*This css file contains all styling for the navbar on left of page*/
+
+/*logo in navbar*/
+#logo{
+	display: block;
+	margin: 15px auto 10px auto;
+	max-width: 80%;
+	height: auto;
+}
+#logo:hover{
+	border-radius: 25px;
+	background-color: grey;
+	opacity: 0.7;
+}
+
+/*navbar general styling*/
+nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 180px;
+	height: 100%;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	border-right: 1.5px solid #26abff;
+}
+
+/*list in navbar*/
+nav ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+/*how list items are formatted*/
+nav li{
+	margin-top: 5px;
+	padding-bottom: 5px;
+	position: relative;
+	display: inline-block;
+}
+
+/*style for each individual list item in navbar*/
+.navElem{
+	font-weight: bold;
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+	margin-top: 10px;
+}
+
+.navElem:hover{
+	color: grey;
+}
+
+.navElem::after{
+	content: '';
+	display: block;
+	height: 3px;
+	width: 0%;
+	background-color: white;
+	position: absolute;
+
+	transition: all ease-in-out 210ms;
+}
+
+.navElem:hover::after{
+	width: 100%;
+}
+
+/*-------------------------------------------------------------
+Below this contains styling for the bottom half of the navbar
+-------------------------------------------------------------*/
+/*style for contactMe div*/
+#contactMe {
+	align-items: left;
+	margin-left: 0px;
+	font-size: 12px;
+	color: white;
+    position: absolute;
+    margin-bottom: 20px;
+    bottom: 0;
+}
+
+#contactMe h3{
+	text-align: center;
+	text-decoration: underline dashed;
+	color: white;
+	margin-bottom: 5px;
+}
+
+#contactMe a{
+	font-size: 12px;
+	text-transform: lowercase;
+	color: white;
+}
+
+#contactMe a::after{
+	height: 2px;
+}
+
+#contactMe a:hover{
+	color:grey;
+}
+
+/*Below is styling for the social media icons div section*/
+#icons{
+	align-items: center;
+	display: inline-block;
+	margin-top: 3px;
+	padding-top: 0px;
+}
+
+/*styling for the email mailto link*/
+#icons a{
+	margin-top: 4px;
+	padding-top: 0px;
+	font-size: 20px;
+}
+
+/*style for each logo*/
+.fa {
+	font-size: 20px;
+	text-align: center;
+	text-decoration: none;
+	margin-left: 10px;
+	padding-left: 8px;
+}
+
+.fa:hover {
+	color:grey;
+	/*opacity: 0.45;*/
+}
+.fa:hover::after{
+	width: 0%;
+	opacity: 0.45;
+}
+
+.fa-linkedin {
+	background: #666666;
+	color: white;
+}
