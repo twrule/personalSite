@@ -2,147 +2,45 @@
 <html>
 
 <head>
-	<title>Tyler W Rule</title>
-	<link rel="stylesheet" type="text/css" href="homePage.css">
-	<link rel="stylesheet" type="text/css" href="navBar.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="author" content="Tyler Rule">
-	<meta name="description" content="Personal website and portfolio for Tyler Rule">
-
-	<link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
-
-
+    <title>Tyler W Rule</title>
+    <link rel="stylesheet" type="text/css" href="landingPage.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tyler Rule">
+    <meta name="description" content="Personal website and portfolio for Tyler Rule">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+	<div id="snow">
+    
+    <div class="hero">
+        <div class="heroCenter animated fadeInDown">
+        	<div class="boxColor">
+            <div id="landingMsg">
+            	<div id="headshotIMG"><img id="headshot" src="img/face.png" alt="Headshot"></div>
+                <script src="timeGreeting.js"></script>
+                <h3>My name is</h3>
+                <h1>Tyler Rule</h1>
+                <h4>I am a recent University of California, Santa Cruz class of 2020 graduate looking for a software development role.</h4>
+                <div class="contactMe">
+                    <h5 id="continueButt"><a href="about.html" class="liveHost">Continue</a> </h5>
+                    <svg height="1" width="250" id="line">
+                        <line x1="0" y1="0" x2="500" y2="0" style="stroke:#26abff;stroke-width:2" />
+                    </svg>
+                </div>
+            </div>
+           
+            <div id='icons'>
+                <a href="https://www.linkedin.com/in/twrule" target="_blank" class="fa fa-linkedin-square"></a>
+                <a href="https://www.instagram.com/t_rule_/" target="_blank" class="fa fa-instagram"></a>
+                <a href="https://github.com/twrule" target="_blank" class="fa fa-github-square"></a>
+            </div>
 
-	<nav>
-		<a href="#" id="mdl" class="mdl"><img src="img/logo.png" alt="logo" id="logo"></a>
-		<ul>
-			<div><li><a href="#about" class="navElem">About</a></li></div>
-			<div><li><a href="#projectDiv" class="navElem">Projects</a></li></div>
-			<!-- <div><li><a href="#that" class="navElem">That</a></li></div>
-			<div><li><a href="#none" class="navElem">None</a></li></div> -->
-		</ul>
-
-		<div id='contactMe'>
-			<h3><pre> Contact Me </pre></h3>
-			<p><a href="mailto:tylerwrule@gmail.com" class="navElem">tylerwrule@gmail.com</a></p>
-			<div id='icons'>
-				<a href="https://www.linkedin.com/in/twrule" target="_blank" class="fa fa-linkedin-square"></a>
-				<a href="https://www.instagram.com/t_rule_/" target="_blank" class="fa fa-instagram"></a>
-				<a href="https://github.com/twrule" target="_blank" class="fa fa-github-square"></a>
-			</div>
-		</div>
-	</nav>
-
-
-
-	<main>
-		<div id='aboutDiv'><span id='about'></span>
-			<h2><pre> </pre></h2>
-			<div id="aboutWrapper">
-				<div id='aboutPhoto'>
-					<img src="img/me.JPG" alt="myFace" id="aboutPic">
-				</div>
-				<div id='aboutText'>
-					<p>
-						Hi! My name is Tyler Rule and I am a recent graduate
-						from the University of California, Santa Cruz. Through 
-						hard work and dedication I was able to graduate early in
-						March 2020 and received a Bachelor of Science Degree 
-						majoring in Computer Science.  While at school I was also
-						part of the NCAA Cross Country and NCAA Track and Field 
-						teams and in my free time I enjoyed surfing, skating, 
-						and rock climbing in the beautiful Santa Cruz county.  
-						Now that school is over I am currently living in Huntington
-						Beach, California working on various personal projects
-						as well as Lifeguarding at both Bolsa Chica State Beach
-						and Huntington State Beach.  Feel free to check everything
-						out and contact me with any questions you may have
-					</p>
-				</div>
-			</div>
-		</div>
-
-		<div id='projectDiv'>
-			<div id='projectText'>
-				Below are a few of my favorite projects that I have completed, to see them in action or the source code please visit my Github.  You will also find many more projects on my Github that are not included here.
-			</div>
-			<table id='projTable'>
-				<tr>
-					<td><img src="img/runningMan.gif" alt="running man gif" class="tablePhotos"></td>
-					<td>This is a gif of my favorite project for my Computer Graphics course, CSE160, at UCSC.  This animation is live hosted <a href="runningMan/drive.html" target="_blank" class="liveHost">here</a>.  If you navigate to the site you can actually rotate the guy and control him with your mouse.  To code this graphic I used  <span class="importantWord">Javascript</span>, <span class="importantWord">WebGL</span>,  <span class="importantWord">HTML</span>, and <span class="importantWord">CSS</span>.</td>
-				</tr>
-				<tr>
-					<td><img src="img/stockProj.png" alt="Stock Project" class="stocksProjPhoto"></td>
-					<td>For my Artificial Intellegence course, CSE140, I built a stock market price predictor.  This tool used Machine Learning and LSTM units to help learn.  When run, the application asks for a stock and generates a csv file with the entirety of that stocks price history.  It then trains on all the generated data to predict the stock's closing market price for the following day using indicators based on the Swing Trading model.  There is a bit of user customizability such as range of dates to train on, any stock that exists can be used, and the model can predict the next day, week, or month's closing price (next day is the most optimal).  The model was adjusted to slightly underpredict the closing price to make sure the user would never wait for a stock to hit price that shouldn't happen.  <a href="https://youtu.be/olQMiNtf1M8" target="_blank" class="liveHost">Here</a> is a 5 minute presentation on YouTube that we made.  To build this project we used <span class="importantWord">Python</span>, the Alpha Vantage API, <span class="importantWord">LSTM model</span>, <span class="importantWord">Keras</span>, <span class="importantWord">Plotly and Matlib</span>, and <span class="importantWord">RNN architectures</span>.</td>
-				</tr>
-				<tr>
-					<td><img src="img/runnersMatch.png" alt="RunnersMatch" class="stocksProjPhoto"></td>
-					<td>RunnersMatch was a web application built for my Introduction to Software Engineering Course, CSE115a to practice developing a project while using the Scrum process.  For the purpose of the course I was the Scrum Master and product owner of this project. Being a runner, I knew the struggle of attempting to train by myself and from this struggle RunnersMatch was born. RunnersMatch was designed to be a platform for runners to sign up and find other Runners in their local area to train with.  This project was built using <span class="importantWord">Scrum</span>, <span class="importantWord">React</span>, <span class="importantWord">JavaScript</span>, and <span class="importantWord">Firebase</span>.</td>
-				</tr>
-				<tr>
-					<td><img src="img/bearGif.gif" alt="Bear Gif" class="tablePhotos"></td>
-					<td>This gif was made for my Digital Tools for Contemporary Art Practice, ART 80T, class at UCSC.  There's unfortunately no code for this, but it is a gif I made using <span class="importantWord">Adobe Photoshop</span> and <span class="importantWord">Adobe Illustrator</span>.</td>
-				</tr>
-				<tr>
-					<td><img src="img/smartCalendar.png" alt="smartCalendar" class="stocksProjPhoto"></td>
-					<td>Here is the SmartCalendar android application that I built for my Mobile Applications Course, CMPS121, at UCSC.  The purpose of the application was to create a "smart calendar" that would allow users to input tasks they have on any given day and the application would help the user better manage their time by giving recommendations of how long a person should work each day to complete a certain task.  If the user did not complete the suggested time, the application would adjust the following days' required time necessary to complete the application.  This application was built using <span class="importantWord">Java</span>, and <span class="importantWord">Android Studio</span>.</td>
-				</tr>
-			</table>
-		</div>
-
-		<!-- <div id='thatDiv'>
-			<span id='that'></span>
-		</div>
-
-		<div id='noneDiv'>
-			<span id='none'></span>
-		</div> -->
-
-		<div class="bg-modal">
-		<div class="modal-content">
-			<div class="close">+</div>
-
-			<img src="img/face.png" alt="myFace" id="modalPic">
-
-			<div class="modalText">
-				<p>Thank you so much for taking the time to stop by!</p>
-				<p>If you would like me to contact you please fill out the form below.</p>
-			</div>
-
-			<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc9qOhI53IzyMLUNhI0ffxBxlBuXsndy31bEkZHFwGGIkp1tw/formResponse" method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
-				<div class="modalForm">
-		        	<input class="" type="text" placeholder="Name" id="name" required name="entry.1551132283">
-		      	</div>
-		      	<div class="modalForm">
-		       		<input class="" type="text" placeholder="E-mail" id="email" required name="entry.433810818">
-		      	</div>
-
-		      	<div class="">
-		        	<button class="subButt" type="submit">SEND</button>
-		      	</div>
-		    </form>
-		</div>
-	</div>
-	</main>
-
-	<footer>
-		<div id="footerDiv">
-			<h3>Please don't hesitate reach out. I can be contacted through the methods below</h3>
-			<h4>Email: <a href="mailto:tylerwrule@gmail.com" class="liveHost">tylerwrule@gmail.com</a></h4>
-			<h4>LinkedIn: <a href="https://www.linkedin.com/in/twrule" class="liveHost" target="_blank">Tyler Rule</a></h4>
-			<h4>Instagram: <a href="https://www.instagram.com/t_rule_/" class="liveHost" target="_blank">t_rule_</a></h4>
-			<h4>Github: <a href="https://github.com/twrule" class="liveHost" target="_blank">twrule</a></h4>
-			<h4>My unofficial transcript is available upon request.</h4>
-			<h4><a href="img/TylerRuleResume.pdf" class="tscript" target="_blank">Here</a> is my resume</h4>
-		</div>
-	</footer>
-
-
+            </div>
+        </div>
+    </div>
 </body>
-<script type="text/javascript" src="personalSite.js"></script>
+
 </html>
